@@ -1,0 +1,27 @@
+package json;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+//import json.ResponseData.App;
+
+import com.google.gson.Gson;
+
+public class ParseJson {
+
+	public static void main(String[] args) throws IOException {
+		
+				String result = new String(Files.readAllBytes(Paths
+						.get("C:\\Users\\463683\\eclipse\\YARN-test\\src\\result.txt")));
+
+		System.out.println(result);
+		ResponseData s = new Gson().fromJson(result, ResponseData.class);
+		
+		System.out.println(s);
+		
+		System.out.println("completion: " + s.app.getProgress());
+
+	}
+
+}
