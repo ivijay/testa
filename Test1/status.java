@@ -1,0 +1,125 @@
+package jnrpe.hadoop.yarn.appstatus;
+
+public class Status {
+	
+    private String id;
+    private String user;
+    private String name;
+    private String queue;
+    private String state;
+    private String finalStatus;
+    private int progress;
+    private String trackingUI;
+    private String diagnostics;
+    private long clusterId;
+    private long startedTime;
+    private long finishedTime;
+    private long elapsedTime;
+    private String amContainerLogs;
+    private String amHostHttpAddress;
+    
+	public Status(String id2) {
+		this.id = id2;
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getUser() {
+		return user;
+	}
+	public void setUser(String user) {
+		this.user = user;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getQueue() {
+		return queue;
+	}
+	public void setQueue(String queue) {
+		this.queue = queue;
+	}
+	public String getState() {
+		return state;
+	}
+	public void setState(String state) {
+		this.state = state;
+	}
+	public String getFinalStatus() {
+		return finalStatus;
+	}
+	public void setFinalStatus(String finalStatus) {
+		this.finalStatus = finalStatus;
+	}
+	public int getProgress() {
+		return progress;
+	}
+	public void setProgress(int progress) {
+		this.progress = progress;
+	}
+	public String getTrackingUI() {
+		return trackingUI;
+	}
+	public void setTrackingUI(String trackingUI) {
+		this.trackingUI = trackingUI;
+	}
+	public String getDiagnostics() {
+		return diagnostics;
+	}
+	public void setDiagnostics(String diagnostics) {
+		this.diagnostics = diagnostics;
+	}
+	public long getClusterId() {
+		return clusterId;
+	}
+	public void setClusterId(long clusterId) {
+		this.clusterId = clusterId;
+	}
+	public long getStartedTime() {
+		return startedTime;
+	}
+	public void setStartedTime(long startedTime) {
+		this.startedTime = startedTime;
+	}
+	public long getFinishedTime() {
+		return finishedTime;
+	}
+	public void setFinishedTime(long finishedTime) {
+		this.finishedTime = finishedTime;
+	}
+	public long getElapsedTime() {
+		return elapsedTime;
+	}
+	public void setElapsedTime(long elapsedTime) {
+		this.elapsedTime = elapsedTime;
+	}
+	public String getAmContainerLogs() {
+		return amContainerLogs;
+	}
+	public void setAmContainerLogs(String amContainerLogs) {
+		this.amContainerLogs = amContainerLogs;
+	}
+	public String getAmHostHttpAddress() {
+		return amHostHttpAddress;
+	}
+	public void setAmHostHttpAddress(String amHostHttpAddress) {
+		this.amHostHttpAddress = amHostHttpAddress;
+	}
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Current status of application " + id + " is " + state + " with progress "
+				+ progress + "%";
+	}
+
+    
+    
+}
