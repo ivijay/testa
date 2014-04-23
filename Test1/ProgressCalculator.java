@@ -1,29 +1,105 @@
 package json;
 
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-
-//import json.ResponseData.App;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 import com.google.gson.Gson;
+//import java.io.IOException;
+//import java.nio.file.Files;
+//import java.nio.file.Paths;
 
-public class ParseJson {
-
-	public static void main(String[] args) throws IOException {
-		
-				String result = new String(Files.readAllBytes(Paths
-						.get("C:\\Users\\463683\\eclipse\\YARN-test\\src\\result.txt")));
-
-		System.out.println(result);
-		ResponseData s = new Gson().fromJson(result, ResponseData.class);
-		
-		System.out.println(s);
-		
-		System.out.println("completion: " + s.app.getProgress());
-
+public class ProgressCalculator {
+ 
+//	http://{http address of service}/ws/{version}/{resourcepath}
+	private String host;
+	private String port;
+	private String version;
+	private String resourcePath;
+	private String Message;
+	private int progress;
+	
+	public ProgressCalculator(String host, String port, String version,
+			String resourcePath) {
+		super();
+		this.host = host;
+		this.port = port;
+		this.version = version;
+		this.resourcePath = resourcePath;
 	}
 
+	public int getProgress() {
+		return progress;
+	}
+
+	public void setProgress(int progress) {
+		this.progress = progress;
+	}
+
+	public String getMessage() {
+		return Message;
+	}
+
+	public void setMessage(String progressMessage) {
+		this.Message = progressMessage;
+	}
+
+	public void calculateProgress(String AppID) {
+ 
+		String applicationURL = "http://" + host + ":" + port + "/" + "ws" + "/" + version + "/" + resourcePath + "/" + AppID; 
+		
+		try {
+ 
+		URL url = new URL(applicationURL);
+		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		conn.setRequestMethod("GET");
+		conn.setRequestProperty("Accept", "application/json");
+ 
+		switch(conn.getResponseCode()) {
+		
+		case 200:
+				BufferedReader br = new BufferedReader(new InputStreamReader((conn.getInputStream())));
+
+				ResponseData s = new Gson().fromJson(br,ResponseData.class);
+				
+//				System.out.println(s);
+				
+				setProgress(s.app.getProgress());
+				setMessage(s.app.toString());
+				
+				break;
+		case 404:
+			
+			setProgress(-1);
+			setMessage("Application AppID not found");
+				break;
+		default:
+		
+			setProgress(-99);
+			setMessage("Unknown error");
+			break;
+		}
+ 
+		 
+		conn.disconnect();
+ 
+	  } catch (MalformedURLException e) {
+ 
+		  setProgress(-99);
+		e.printStackTrace();
+ 
+	  } catch (IOException e) {
+ 
+		  setProgress(-99);
+		e.printStackTrace();
+ 
+	  }
+ 
+	}
+ 
 }
 
 class ResponseData {
@@ -212,3 +288,5 @@ class ResponseData {
 		return app.toString();
 	}
 }
+
+
