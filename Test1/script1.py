@@ -30,21 +30,25 @@ except urllib2.HTTPError, e:
 	RestResponse = "HTTPError"
 	
 print(RestResponse)
+try:
+	if RestResponse == "success":
+		print("success")
+		#response = data["apps"]["app"][1]["id"]
+		response = data["apps"]["app"]
+		#print(id)
+		for i in range(0,len(response)):
+			if((response[i]["name"].find("storm")) > -1):
+				print(response[i]["id"] +"\t" + response[i]["name"] +"\t" + response[i]["finalStatus"])
+	elif RestResponse == "HTTPError":
+		response = "error"
+		print("error")
+	else:
+		progress = 120
+		state = "failure"
+		finalStatus = "Unknown error"
+		print("failure")
 
-if RestResponse == "success":
-	print("success")
-	#response = data["apps"]["app"][1]["id"]
-	response = data["apps"]["app"]
-	print(id)
-	for i in range(0,len(response)):
-		print(response[i]["id"] +"\t" + response[i]["finalStatus"])
-elif RestResponse == "HTTPError":
-	response = "error"
-	print("error")
-else:
-	progress = 120
-	state = "failure"
-	finalStatus = "Unknown error"
+except Exception, e:
 	print("failure")
 
 	
