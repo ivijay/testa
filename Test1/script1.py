@@ -9,17 +9,18 @@
 import urllib2
 import json
 import urllib
+import fnmatch
 
 host = "localhost"					# IP address of the job history server
 port = "8088"						# port
 version = "v1"						# version
 resourcePath = "cluster/apps"		# resourcepath
 
-#url = "http://" + host + ":" + port + "/" + "ws" + "/" + version + "/" + resourcePath + "/" + appID
+#url of the REST API
 url = "http://" + host + ":" + port + "/" + "ws" + "/" + version + "/" + resourcePath + "/" 
 u = urllib.urlopen(url)
 
-print("start")
+#print("start")
 
 try:
 	resp = urllib2.urlopen(url).read()
@@ -32,13 +33,18 @@ except urllib2.HTTPError, e:
 print(RestResponse)
 try:
 	if RestResponse == "success":
-		print("success")
-		#response = data["apps"]["app"][1]["id"]
+#		print("success")
 		response = data["apps"]["app"]
-		#print(id)
 		for i in range(0,len(response)):
-			if((response[i]["name"].find("storm")) > -1):
-				print(response[i]["id"] +"\t" + response[i]["name"] +"\t" + response[i]["finalStatus"])
+			#
+			#wild search on application name
+			#
+			if fnmatch.fnmatch(response[i]["name"], '*word*'):
+				print(response[i]["id"] +"\t" + response[i]["name"] +"\t" + response[i]["finalStatus"] + "\t" + str(response[i]["elapsedTime"]))
+				#print(response[i]["elapsedTime"])
+				#
+				#Here nagios plugin can be called for each application ID, to display its staus in console.
+				#
 	elif RestResponse == "HTTPError":
 		response = "error"
 		print("error")
@@ -49,11 +55,5 @@ try:
 		print("failure")
 
 except Exception, e:
-	print("failure")
+	print(e)
 
-	
-	#print(progress)
-	#print(state)
-	#print(finalStatus)
-	
-	#return progress
