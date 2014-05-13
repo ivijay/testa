@@ -1,0 +1,198 @@
+                                                                  Tel     : +91-9886146064
+Uma Shankar Dhavala       Email:umashankard.hadoop@gmail.com
+
+
+IT professional having 7.4 yrs of experience.
+
+Summary:
+A result oriented professional having 
+a. 1.6 years of experience in phases of software development, which Technical strengths are SQL, BigData (Hadoop, MapReduce, Apache Hive and Yahoo PIG)  and Core Java
+b. 5.8 yrs of experience in developing, maintaining Mainframe applications.
+Currently designated as Assistant Consultant with Tata Consultancy Services Ltd.
+Experience in Debugging and Testing of both Batch and Online Systems.
+Good exposure to SDLC process and Quality activities.
+Excellent Analytical and problem solving skills. Worked in teams and adhered to the planned development time frame.
+Good communication and inter-personal skills. 
+Client location work exposure
+Good team leading skills
+Got experience in project management
+
+Areas of Proficiency:
+
+Operating Systems			:	MVS, Windows NT, Windows 2000, XP, Red Hat     
+Linux & Ubuntu.
+Database				:	DB2 & Oracle
+NOSQL Database                           :         MongoDB & Cassandra
+BIG Data Analytical tools                :         HDFS, Map Reduce, HIVE, PIG, Sqoop, Flume
+Programming Languages                :         Core Java, SQL, HPS and Excel VBA
+Mainframe Technologies		:	COBOL, JCL, Easy-trieve,
+TSO/ISPF, REXX, XPEDITOR & SPUFI
+Scheduler                                     :         TWS OPC & Fair Scheduler
+Version Controller                          :         Endevor and Alchemist
+
+
+
+Certification Details:
+
+1. DB2(700) Family Fundamentals by IBM
+2. ITIL v 3 by EXIN (For support Process)
+
+Organizational Experience:
+
+1. Current Employer :
+a. Name: Tata Consultancy Services Ltd.
+b. Designation: Assistant Consultant
+c. Duration: Jan, 07 – Till Date
+d. Location: Bangalore
+Educational Qualification:
+Bachelor of technology (Computer science and Engineering), Jawaharlal Nehru Technological University (J.N.T.U)
+
+PUC from Gayathri Junior College, Vizianagaram.
+SSC from Andhra Pradesh State Board
+
+Projects Worked on: 
+
+Hadoop:
+
+Project 1: Data Mining on Wikipedia data set using MapReduce (Training project for TCS)
+Client: Twitter 
+Duration: Feb 2013- Jun 2013 
+Team Size: 5
+Language: HDFS, MapReduce, Hive, mongoDB
+Description The main aim of this project is to understand the MapReduce execution framework in detail on larger data sets and to tune the MapReduce jobs running on cluster using Combiner, configuration tuning parameters like block size, sort factor etc.. 
+
+Role: Developer and involved in administration
+Responsibilities:
+ Administrating the 5 node Hadoop Cluster
+Loading data sets to HDFS and writing MapReduce jobs to mine the data.
+Writing HIVE Queries.
+Loading data sets to HIVE tables and writing queries to process.
+
+Project 2: Morgan Stanley Money Movement Project
+Duration: Jul 2013- Aug 2013
+Team Size: 4
+Language: Java, QPP, MapReduce, HIVE
+Platform: Ubuntu
+Description: This project enables user to make all their banking transaction hassle free and online, such that the users can access them on the go. They can make all the transaction that a typical bank would provide by sitting in the comforts of their homes/offices. This project makes use of TCS product called TCS BANCS, which is the base on which the project is built. 
+
+Role: Programmer Analyst (Team member)
+Responsibilities:
+Loading files to HDFS and writing HIVE queries to process required data.
+Writing Pig scripts.
+Maintaining and Administrating the 06 node Hadoop cluster.
+Worked on setting up Hadoop over multiple nodes and designed and developed Java map reduce jobs.
+
+Project 3: Manage your Card Account –Hadoop Migration(Presently working)
+Client: Bank of America 
+Duration: Sep 2013- Till date
+Team Size: 6
+Language: HDFS, Map Reduce, Eclipse, HIVE, HBASE and PIG
+Description This is related to CARDS Application. All the Transaction done through the CARDS are captured here. Customer will be providing PIN to proceed with transactions in a secure manner.
+
+Some of the main features include.
+* Check the Transaction as per Account Number and CARD number.
+* Validating the data captured correctly or not.
+* Update Customer details if requested by customers.
+
+Role: Developer
+Responsibilities:
+Understanding the Functional Design Document by interacting with clients.
+Worked as Team Member for Statement Module.
+Preparation of Technical Design Document.
+Involved in Preparation of test cases/Test Scripts and execution.
+Maintaining and Administrating the 16 node Hadoop Cluster.
+Loading files to HDFS and writing HIVE queries to process required data.
+Unit testing of components, maintenance of code and components
+Develop code for the functioning of the Bank’s Cards related transactions on the Hadoop and Mainframe platforms using DB2 as a Database.
+
+
+Mainframes:
+
+Project 1: Aviva Life Insurance
+Duration: April 2007 – December 2009
+Team Size: 50
+Location: Bangalore, India
+Description: I handled two applications in this project
+
+CFFE (Client first front end) -> this is the tool which is used by the Aviva’s call centre team which has information on the various policies offered by the company. The front end is Visual Basic and the COBOL is linked with this and the database is DB2. 
+
+Role: Production Support Executive
+Responsibilities:
+Root Cause Analysis for the Issues related to the above mentioned Sub-Systems.
+Solving High-Priority Issues 
+Impact analysis for the changes which needs to be done to the existing business logic.
+In case of Code-Fixes, Involved in the Whole SDLC right from Requirement Analysis to Testing.
+Involved in Requirement Analysis, Design and Coding , Preparation of Test Cases and Testing 
+Client communication, Status Reporting, Mentoring team members, selecting new members in the team, Domain Knowledge Gathering and other related activities.
+Conducting Induction and training on technical and project related activities to new team members.
+
+Impact analysis of Batch flow and online screens.
+Enhancements in Batch and online screens.
+
+
+Project 2: London Clearing House.Clearnet (LCH.Clearnet)
+Duration: January 2010 – March 2010 
+Team Size: 10
+Location: London, UK from Jan 2010 to Feb 2010 and Bangalore, India from Feb 2010 to March 2010.
+Description: LCH.Clearnet is a clearing house for stock exchanges in London markets. It will clear all the stocks that were recorded for the day in various stock exchanges and finally stores in the clearing house which is a repository.
+
+Role: Production Support Executive
+Responsibilities:
+Gathering the project details from the clients
+Participated in the Due Diligence phase of the Knowledge transition from clients at client location (London, UK) which is the initial phase of the transition.
+Co-ordination of day to day work carried out at onshore with offshore.
+Project 3: Legal and General (L&G)
+Duration: April 2010 – Jan 2013 
+Team Size: 45
+Location: Bangalore, India 
+Description: L&G is an insurance based company, in which I worked for the team Future Product framework (FPF) which comes under Savings and Wealth tower of L&G. 
+
+Role: Analyst, Developer and Resource Group Owner
+Responsibilities:
+Scheduling the batches for Testing teams to support the testing
+Design and implementation of OPC changes in OPC scheduler
+Extracting graphs from OPC batch runs which includes dependencies
+Analyzing the batch errors and resolve them as and then
+Development of JCLs, COBOL and COBOL DB2 programs
+Maintenance of existing elements like JCLs, Control cards, Cataloged Procedures
+
+
+
+
+
+
+
+Additional Responsibilities:
+I have handled much knowledge sharing sessions across various forums within my company.
+I have mentored new members in my team.
+I have organized fun activities at work for my team.
+I was chosen as the defect prevention (DP) prime for the entire project in AVIVA who have the responsibility in collecting the project’ s metrics on weekly and monthly basis and analyzing the root cause of the defects.
+Interaction with the clients directly at client location (London, UK)
+Leading a team of 6 members
+
+Personal Details:
+  
+
+  Father’s Name                      :          Mr. D Sivananda Sarma
+
+  Mother’s Name                     :          Mrs. D Padmavathi
+
+  Spouse’s Name                     :          Mrs. Sunitha Sultania
+	
+  Permanent Address               :           Flat No F1, 
+                                                 	        Mayur Residency, Pradeep Nagar,
+                                                            Vizianagaram, Andhra Pradesh – 535003.
+
+  Communication Address       :           Flat No G2, SLV Sunrise Residency,
+                                                            Belathur, Kadugodi,
+                                                            Bangalore - 560067
+
+  Date of birth		       :	        12-06-1985
+
+  Marital Status		       :	        Married
+
+  Nationality			       :	        Indian
+
+  Languages Known                 :	        English, Hindi and Telugu
+
+  Passport Number		       :           G1477027
